@@ -19,7 +19,7 @@ As you advance your skills as a web developer, you'll need to incorporate the th
 
 * imageList - An array (list) of all the images it can choose from
 * randomNumber - A random number between 0 and the number of items in the array -1
-* randomImage - The information taken from the randomly chosen item in the array
+* randomPick - The information taken from the randomly chosen item in the array
 * imageElement - The HTML element that has been given the id name of "randomImage"
 
 
@@ -43,7 +43,7 @@ var randomizer = Math.floor(Math.random() * images.length);
 3. The third part picks the item from the array that corresponds with the randomly generated number.
 
 ```javascript
-var randomImage = images[randomizer];
+var randomPick = images[randomizer];
 ```
 
 <br>
@@ -57,7 +57,7 @@ var imageElement = document.getElementById("randomImage");
 5. The fifth part sets that chosen image's `src=""` attribute to the file name of the randomly chosen file from the array. For example, `imageElement.src = randomImage` will set the image source to “example3.jpg” if that was the random image.
 
 ```javascript
-imageElement.src = randomImage;
+imageElement.src = randomPick;
 ```
 
 <br>

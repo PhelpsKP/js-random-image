@@ -1,25 +1,17 @@
 // Create an array of available images. In this example they are in a subdirectory so the path includes the folder name before the file name:
-var imageList = [
-   "images/cookie.jpg",
-   "images/demi.jpg",
-   "images/gary.jpg",
-   "images/ivan.jpg",
-   "images/sweetie.jpg",
-   "images/tia.jpg",
-   "images/vlad.jpg"
-];
+
 
 // Generate a random number based on the number of images in the array:
-var randomizer = Math.floor(Math.random() * imageList.length);
+
 
 // Get the image from the array based on that random number:
-var randomPick = imageList[randomizer];
+
 
 // Go into the HTML and find the element with the id of "randomImage":
-var imageElement = document.getElementById("randomImage");
+
 
 // Add the randomly chosen image's source (src) info to that element:
-imageElement.src = randomPick;
+
 
 
 
@@ -51,9 +43,8 @@ The fourth part gets the image element from the HTML. This is done with the code
 
 For example, if the image element has an id of “randomImage”, then document.getElementById(“randomImage”) will get that element. An id is similar to a class, the difference being that classes can be applied to multiple elements, but each id can only be used once per page. 
 
-The fifth part goes into the HTML and adds a value to the source attribute (src) of the element chosen in the previous step. For example, imageElement.src = randomPick will set the image source to “image3.jpg” if that was the random image.
+The fifth part goes into the HTML and adds a value to the source attribute (src) of the element chosen in the previous step. For example, imageElement.src = randomPick will set the image source to “example3.jpg” if that was the random image that was chosen.
 
 This code will run every time the webpage is loaded, so it will display a different image each time. 
-
 
 /////////////////////////////*/
