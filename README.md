@@ -1,47 +1,59 @@
 # Pick a Random Image with JavaScript
+
+As you advance your skills as a web developer, you'll need to incorporate the three essential web languages: **HTML**, **CSS**, and **JavaScript**. While this class has been concentrating on HTML and CSS to create structure and style, adding a splash of JavaScript can add some additional functionality to your pages. 
+
+* **HTML** lays the groundwork by structuring web content. It defines the bones of a webpage—the headings, paragraphs, images, and links. Think of it as the architectural blueprint for your digital space.
+
+* **CSS** steps in to add style and aesthetics. It paints the walls, arranges the furniture, and ensures a visually pleasing experience. With CSS, we transform raw HTML into a polished, user-friendly interface.
+
+* **JavaScript**, however, can be a dynamic force that adds more dynamic elements into our static web pages. When users click buttons, submit forms, or change the content, JavaScript orchestrates the show.
+
 ---
+<br>
 
-## Here's how it works: 
+**In this coding exercise you will write some basic JavaScript that will show a random image each time a page is loaded. This is surprisingly complicated when compared to adding an image with HTML.**
 
-1. The first part creates an array of image sources. An array is a collection of data that can be accessed by in different ways. In this example the array has been given the name "images":
+## Here's how this JavaScript works: 
+
+1. The first part creates an array of image sources. An array is a list of data that can be accessed by in a variety of different ways. In this example the array has been given the name of "images":
 
 ```javascript
 var images = [
    "example1.jpg",
    "example2.jpg",
-   "example.jpg"
+   "example3.jpg"
 ];
 ```
 <br>
-2. The second part gets a random item from the array. `Math.random()` returns a random number between 0 and 1. `Math.floor()` rounds down a number to the nearest integer. So, `Math.floor(Math.random() * images.length)` will return a random integer between 0 and images.length - 1, which is the range of valid indexes for the array.
+2. The second part generates a random number based on the number of items listed in the array. `Math.random()` returns a random number between 0 and 1. `Math.floor()` rounds down a number to the nearest integer. So, `Math.floor(Math.random() * images.length)` will return a random integer between 0 and images.length - 1, which is the range of valid indexes for the array. 
 
 ```javascript
 var randomizer = Math.floor(Math.random() * images.length);
 ```
 
 <br>
-3. The third part gets the image source from the array using the random index number that was generated.
+3. The third part picks the item from the array that corresponds with the randomly generated number.
 
 ```javascript
 var randomImage = images[randomizer];
 ```
 
 <br>
-4. The fourth part gets the &lt;img&gt; element from the webpage using its id attribute. For example, if the image element has an id of “randomImage”, then ``document.getElementById(“randomImage”)`` will get that element.
+4. The fourth part goes into the HTML page and finds an &lt;img&gt; element that has a specified id attribute. For example, if the image element has an id of “randomImage”, then `document.getElementById(“randomImage”)` will get that element.
 
 ```javascript
 var imageElement = document.getElementById("randomImage");
 ```
 
 <br>
-5. The fifth part sets that image's ``src=""`` attribute to the file name of the randomly chosen file from the array. For example, ``imageElement.src = randomImage`` will set the image source to “example3.jpg” if that was the random image.
+5. The fifth part sets that chosen image's `src=""` attribute to the file name of the randomly chosen file from the array. For example, `imageElement.src = randomImage` will set the image source to “example3.jpg” if that was the random image.
 
 ```javascript
 imageElement.src = randomImage;
 ```
 
 <br>
-6. Adding the script to an HTML file will make this code run every time the webpage is loaded, so it will display a different image each time. Adding the defer attribute to the script tag tells it not to run the script until after all of the HTML is done loading. 
+6. Adding the script to an HTML file will make this code run every time the webpage is loaded, so it will display a different image each time. Adding the `defer` attribute to the script tag tells it not to run the script until after all of the HTML is done loading. 
 
 ```html
 <script src="random.js" defer></script>
