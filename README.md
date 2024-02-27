@@ -15,6 +15,14 @@ As you advance your skills as a web developer, you'll need to incorporate the th
 
 ## Here's how this JavaScript works: 
 
+### Vaiables used in this script:
+
+* imageList - An array (list) of all the images it can choose from
+* randomNumber - A random number between 0 and the number of items in the array -1
+* randomImage - The information taken from the randomly chosen item in the array
+* imageElement - The HTML element that has been given the id name of "randomImage"
+
+
 1. The first part creates an array of image sources. An array is a list of data that can be accessed by in a variety of different ways. In this example the array has been given the name of "images":
 
 ```javascript
