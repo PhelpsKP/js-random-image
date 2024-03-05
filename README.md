@@ -18,15 +18,15 @@ As you advance your skills as a web developer, you'll need to incorporate the th
 ### Vaiables used in this script:
 
 * imageList - An array (list) of all the images it can choose from
-* randomNumber - A random number between 0 and the number of items in the array -1
+* randomizer - A random number between 0 and the number of items in the array -1
 * randomPick - The information taken from the randomly chosen item in the array
-* imageElement - The HTML element that has been given the id name of "randomImage"
+* imgElement - The HTML element that has been given the id name of "randomImage"
 
 
 1. The first part creates an array of image sources. An array is a list of data that can be accessed by in a variety of different ways. In this example the array has been given the name of "images":
 
 ```javascript
-var images = [
+var imageList = [
    "example1.jpg",
    "example2.jpg",
    "example3.jpg"
@@ -50,14 +50,14 @@ var randomPick = images[randomizer];
 4. The fourth part goes into the HTML page and finds an &lt;img&gt; element that has a specified id attribute. For example, if the image element has an id of “randomImage”, then `document.getElementById(“randomImage”)` will get that element.
 
 ```javascript
-var imageElement = document.getElementById("randomImage");
+var imgElement = document.getElementById("randomImage");
 ```
 
 <br>
 5. The fifth part sets that chosen image's `src=""` attribute to the file name of the randomly chosen file from the array. For example, `imageElement.src = randomImage` will set the image source to “example3.jpg” if that was the random image.
 
 ```javascript
-imageElement.src = randomPick;
+imgElement.src = randomPick;
 ```
 
 <br>

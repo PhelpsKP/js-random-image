@@ -1,7 +1,7 @@
-/* This selector is an ID so it starts with a # instead of a . */
+
 .random-cat {
    background-color: #e8e8e8;
-   padding: 1em;
+   padding: 1rem;
    text-align: center;
    border-radius: 3em;
    border: 2px solid silver;
@@ -15,7 +15,7 @@
 .random-cat h2 {
    margin-top: 0;
    border: none;
-   margin-bottom: .75em;
+   margin-bottom: .75rem;
 }
 
 body {
@@ -27,7 +27,7 @@ body {
 header {
    background-color: #2a5655;
    color: white;
-   padding: 1em;
+   padding: 1rem;
    text-align: center;
    font-size: 175%;
 
@@ -40,7 +40,7 @@ header h1 {
 main {
    width: 80%;
    margin: 0 auto;
-   padding: 1em 2em;
+   padding: 1rem 2rem;
    background-color: white;
    font-size: 125%;
    line-height: 1.4;
@@ -53,18 +53,18 @@ main h2 {
    font-weight: normal;
    color: #2a5655;
    border-bottom: 1px solid #2a5655;
-   margin-top: 1em;
+   margin-top: 1rem;
 }
 
 .methods {
    display: grid;
    grid-template-columns: 1fr 1fr;
-   grid-gap: 2em;
+   grid-gap: 2rem;
 }
 
 footer {
    background-color: #c0d8c5;
-   padding: 1em;
+   padding: 1rem;
    line-height: 1.4;
    text-align: center;
 }
@@ -83,11 +83,11 @@ footer h2 {
    color: black;
    text-decoration: none;
    background: linear-gradient(#e8e8e8, #bbbbbb);
-   padding: 1em;
-   border-radius: 1em;
+   padding: 1rem;
+   border-radius: 1rem;
    border: 2px solid silver;
    width: 15%;
-   margin: .5em 5px;
+   margin: .5rem 5px;
    display: grid;
    align-items: center;
    box-shadow: 2px 2px 3px rgb(175, 175, 175);
